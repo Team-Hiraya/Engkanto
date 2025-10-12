@@ -4,6 +4,7 @@ import com.TeamHiraya.Engkanto.Entities.Player;
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
@@ -15,6 +16,12 @@ public class Main extends ApplicationAdapter {
     private Texture image;
     private GameLogo logo;
     private Player player;
+    // camera world test
+//    final float GAME_WORLD_WIDTH = 100;
+//    final float GAME_WORLD_HEIGHT = 50;
+    
+    // Camera test
+    OrthographicCamera camera;
     
     // This is temporary for the ground
     private ShapeRenderer shapeRenderer;
@@ -27,9 +34,13 @@ public class Main extends ApplicationAdapter {
         batch = new SpriteBatch();
         // Create an object of _GameLogo
         logo = new GameLogo("Engkanto_Logo.png", 350, 500, 600, 250);
-        
         // Player position
         player = new Player("Raya.png", 100, groundHeight, 100, 200, 350);
+        // camera test
+//        float aspectRatio = (float)Gdx.graphics.getHeight()/ (float)Gdx.graphics.getWidth();
+//        camera = new OrthographicCamera(GAME_WORLD_HEIGHT * aspectRatio, GAME_WORLD_HEIGHT);
+//        camera.position.set(GAME_WORLD_WIDTH/2, GAME_WORLD_HEIGHT/2,0);
+        
     }
 
     @Override
@@ -53,9 +64,13 @@ public class Main extends ApplicationAdapter {
 //        player.draw(shapeRenderer);
         shapeRenderer.end();
         
+//        // The camera needs an update
+//        camera.update();
+        
         // This draws the logo
         batch.begin();
         player.draw(batch);
+//        batch.setProjectionMatrix(camera.combined);
         logo.draw(batch);
         batch.end();
     }
