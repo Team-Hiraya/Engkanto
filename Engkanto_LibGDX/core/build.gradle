@@ -2,15 +2,8 @@
 eclipse.project.name = appName + '-core'
 
 dependencies {
-  // Hyperlap 2d Runtime
   api "com.badlogicgames.gdx:gdx:$gdxVersion"
-  
-  // Mandatory
-  api "com.badlogicgames.gdx:gdx:$gdxVersion"
-  api "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
-  api "com.badlogicgames.gdx:gdx-freetype:$gdxVersion"
-  api "net.onedaybeard.artemis:artemis-odb:$artemisVersion"
-   
+
   if(enableGraalNative == 'true') {
     implementation "io.github.berstanio:gdx-svmhelper-annotations:$graalHelperVersion"
   }

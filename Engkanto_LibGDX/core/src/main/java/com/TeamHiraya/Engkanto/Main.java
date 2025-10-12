@@ -12,7 +12,7 @@ public class Main extends ApplicationAdapter {
 	// class variables
     private SpriteBatch batch;
     private Texture image;
-    private _GameLogo logo;
+    private GameLogo logo;
     private Player player;
     
     // This is temporary for the ground
@@ -25,7 +25,7 @@ public class Main extends ApplicationAdapter {
     	shapeRenderer = new ShapeRenderer();
         batch = new SpriteBatch();
         // Create an object of _GameLogo
-        logo = new _GameLogo("Engkanto_Logo.png", 350, 450, 600, 250);
+        logo = new GameLogo("Engkanto_Logo.png", 350, 450, 600, 250);
         
         // Player position
         player = new Player(100, groundHeight, 40, 60, 200);
