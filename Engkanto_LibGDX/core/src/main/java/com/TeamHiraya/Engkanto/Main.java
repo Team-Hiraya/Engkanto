@@ -1,5 +1,6 @@
 package com.TeamHiraya.Engkanto;
 
+import com.TeamHiraya.Engkanto.Entities.Player;
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
@@ -25,10 +26,10 @@ public class Main extends ApplicationAdapter {
     	shapeRenderer = new ShapeRenderer();
         batch = new SpriteBatch();
         // Create an object of _GameLogo
-        logo = new GameLogo("Engkanto_Logo.png", 350, 450, 600, 250);
+        logo = new GameLogo("Engkanto_Logo.png", 350, 500, 600, 250);
         
         // Player position
-        player = new Player(100, groundHeight, 40, 60, 200);
+        player = new Player("Raya.png", 100, groundHeight, 100, 200, 350);
     }
 
     @Override
@@ -49,11 +50,12 @@ public class Main extends ApplicationAdapter {
         shapeRenderer.rect(0,0,Gdx.graphics.getWidth(), groundHeight);
         
         // Draw player
-        player.draw(shapeRenderer);
+//        player.draw(shapeRenderer);
         shapeRenderer.end();
         
         // This draws the logo
         batch.begin();
+        player.draw(batch);
         logo.draw(batch);
         batch.end();
     }

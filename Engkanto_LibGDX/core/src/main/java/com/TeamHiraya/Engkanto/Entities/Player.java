@@ -1,20 +1,30 @@
-package com.TeamHiraya.Engkanto;
+package com.TeamHiraya.Engkanto.Entities;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
-import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
+//import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 public class Player {
 	// Class Variables
 	private float x, y;
 	private float width, height;
 	private float speed;
-	private ShapeRenderer shapeRenderer;
+	// Raya Jumping
+	private float yVelocity = 0;
+	private float gravity = -800;
+	private float jumpVelocity = 500;
+	boolean onGround = true;
+	
+	private Texture texture;
+//	private ShapeRenderer shapeRenderer;
 	// temporary variable
 //	private float groundHeight;
 	
 	/**
-	 * == Player Constructor ==
+	 * ======= RAYA =======
+	 * @param texturePath the starting x (horizontal) position ng player
 	 * @param startX the starting x (horizontal) position ng player
 	 * @param startY the starting y (vertical) position ng player
 	 * - This is temporary since wla pang asset yung player
@@ -22,8 +32,9 @@ public class Player {
 	 * @param height yung height ng placeholder
 	 * @param speed gaano kabilis gumalaw yung player (in pixels per second)
 	 * */
-	public Player(float startX,float startY, float width, float height, float speed) {
+	public Player(String texturePath, float startX, float startY, float width, float height, float speed) {
 		// The parameters of Player
+		texture = new Texture(texturePath);
 		this.x = startX;
 		this.y = startY;
 		this.width = width;
@@ -36,25 +47,51 @@ public class Player {
 	public void update(float deltaTime) {
 		handleInput(deltaTime);
 		keepInsideScreen();
+		
+		// Apply gravity pulls the player down (-800)
+		yVelocity += gravity * deltaTime;
+		
+		// update the position when jumped
+		y += yVelocity * deltaTime;
+		
+		// Check if Raya hit the ground
+		if (y <= 0) {
+			y = 0;
+			yVelocity = 0;
+			onGround = true;
+		}
 	} // update method
 	
-	// The player doesn't have sprite yet so we will draw a rectangle for now
-	public void draw(ShapeRenderer shapeRenderer) {
-		shapeRenderer.setColor(0,0,1,1);
-		shapeRenderer.rect(x,y,width,height);
+	// Raya placeholder Sprite
+	public void draw(SpriteBatch batch) {
+		batch.draw(texture, x, y, width, height);
 	} // draw method
-	
+//	
+//	// The player doesn't have sprite yet so we will draw a rectangle for now
+//	public void draw(ShapeRenderer shapeRenderer) {
+//		shapeRenderer.setColor(0,0,1,1);
+//		shapeRenderer.rect(x,y,width,height);
+//	} // draw method
+//	
 	// The player controls
 	private void handleInput(float deltaTime) {
+		// ======= LEFT =======
 		if (Gdx.input.isKeyPressed(Input.Keys.LEFT) || Gdx.input.isKeyPressed(Input.Keys.A)) {
 			x -= speed * deltaTime;
 		}
+		// ======= RIGHT =======
 		if (Gdx.input.isKeyPressed(Input.Keys.RIGHT) || Gdx.input.isKeyPressed(Input.Keys.D)) {
 			x += speed * deltaTime;
+		}
+		// ======= JUMP =======
+		if (onGround && Gdx.input.isKeyPressed(Input.Keys.SPACE)) {
+			yVelocity = jumpVelocity;
+			onGround = false;
 		}
 	} // handleInput method
 	
 	// Prevents the player out of the screen
+	// TODO: Player keeps going to the right the left works fine
 	private void keepInsideScreen() {
 		float screenWidth = Gdx.graphics.getWidth();
 		if (x < 0) x = 0;
