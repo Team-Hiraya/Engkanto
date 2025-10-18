@@ -52,10 +52,7 @@ public class Main extends ApplicationAdapter {
         
         // update player position
         player.update(deltaTime);
-        
-        // draw ground + player
-        shapeRenderer.begin(ShapeRenderer.ShapeType.Filled);
-        
+         
         // Draw ground
         shapeRenderer.setColor(0,1,0,1);
         shapeRenderer.rect(0,0,Gdx.graphics.getWidth(), groundHeight);
