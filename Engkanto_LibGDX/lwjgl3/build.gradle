@@ -22,10 +22,10 @@ sourceSets.main.resources.srcDirs += [ rootProject.file('assets').path ]
 mainClassName = 'com.TeamHiraya.Engkanto.lwjgl3.Lwjgl3Launcher'
 application.setMainClass(mainClassName)
 eclipse.project.name = appName + '-lwjgl3'
-java.sourceCompatibility = 24
-java.targetCompatibility = 24
+java.sourceCompatibility = 17
+java.targetCompatibility = 17
 if (JavaVersion.current().isJava9Compatible()) {
-        compileJava.options.release.set(24)
+        compileJava.options.release.set(17)
 }
 
 dependencies {
@@ -38,7 +38,7 @@ dependencies {
 
     }
 }
-
+	
 def os = System.properties['os.name'].toLowerCase()
 
 run {
