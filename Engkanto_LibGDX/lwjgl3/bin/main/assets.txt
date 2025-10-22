@@ -1,4 +1,9 @@
 Engkanto_Logo.png
+Forest-Placeholder.png
+Placeholder/raya.png
+Placeholder/raya.xml
+Placeholder/raya2.png
+Placeholder/raya2.xml
 Raya.png
 libgdx.png
 video/Ruguerra.mp4
