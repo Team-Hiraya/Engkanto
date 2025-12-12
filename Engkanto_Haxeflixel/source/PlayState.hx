@@ -14,6 +14,7 @@ import lime.media.FlashAudioContext;
  */
 class PlayState extends FlxState
 {
+	var background:FlxSprite;
 	var ground:FlxSprite;
 	var player:Player;
 
@@ -25,7 +26,9 @@ class PlayState extends FlxState
 	{
 		super.create();
 		// camera
-		FlxG.camera.bgColor = FlxColor.BLUE;
+		background = new FlxSprite();
+		background.loadGraphic("assets/images/placeholder_bg.jpg");
+		add(background);
 
 		// create player
 		player = new Player(100, 100);
