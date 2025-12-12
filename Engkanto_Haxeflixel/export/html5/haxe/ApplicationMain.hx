@@ -20,7 +20,7 @@ class ApplicationMain
 
 		#if (js && html5)
 		#if (munit || (utest && openfl_enable_utest_legacy_mode))
-		lime.system.System.embed("Engkanto", null, 640, 480);
+		lime.system.System.embed("Engkanto", null, 1280, 720);
 		#end
 		#else
 		create(null);
@@ -35,7 +35,7 @@ class ApplicationMain
 		ManifestResources.init(config);
 		#end
 
-		app.meta["build"] = "7";
+		app.meta["build"] = "38";
 		app.meta["company"] = "HaxeFlixel";
 		app.meta["file"] = "Engkanto";
 		app.meta["name"] = "Engkanto";
@@ -54,14 +54,14 @@ class ApplicationMain
 			element: null,
 			frameRate: 60,
 			#if !web fullscreen: false, #end
-			height: 480,
+			height: 720,
 			hidden: #if munit true #else false #end,
 			maximized: false,
 			minimized: false,
 			parameters: {},
 			resizable: true,
 			title: "Engkanto",
-			width: 640,
+			width: 1280,
 			x: null,
 			y: null,
 		};
@@ -215,7 +215,11 @@ class ApplicationMain
 							stage.addChild(current);
 						}
 
+						//this define is for internal use only
+						//note: it may be removed abruptly in the future
+						#if !no_openfl_entry_point
 						new DocumentClass(cast current);
+						#end
 					};
 				}
 				else

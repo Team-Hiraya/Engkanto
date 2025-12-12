@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="sprites.png">
+	<!--
+	Created with ShoeBox
+	http://renderhjs.net/shoebox/
+	-->
+	<SubTexture name="butterfly0001.png"	x="0"	y="50"	width="73"	height="48" frameX="-0" frameY="-3" frameWidth="73" frameHeight="54"/>
+	<SubTexture name="butterfly0002.png"	x="0"	y="50"	width="73"	height="48" frameX="-0" frameY="-3" frameWidth="73" frameHeight="54"/>
+	<SubTexture name="butterfly0003.png"	x="62"	y="149"	width="61"	height="53" frameX="-6" frameY="-1" frameWidth="73" frameHeight="54"/>
+	<SubTexture name="butterfly0004.png"	x="62"	y="149"	width="61"	height="53" frameX="-6" frameY="-1" frameWidth="73" frameHeight="54"/>
+	<SubTexture name="butterfly0005.png"	x="124"	y="109"	width="53"	height="54" frameX="-10" frameY="-0" frameWidth="73" frameHeight="54"/>
+	<SubTexture name="butterfly0006.png"	x="124"	y="109"	width="53"	height="54" frameX="-10" frameY="-0" frameWidth="73" frameHeight="54"/>
+	<SubTexture name="butterfly0007.png"	x="124"	y="164"	width="45"	height="54" frameX="-14" frameY="-0" frameWidth="73" frameHeight="54"/>
+	<SubTexture name="butterfly0008.png"	x="124"	y="164"	width="45"	height="54" frameX="-14" frameY="-0" frameWidth="73" frameHeight="54"/>
+	<SubTexture name="butterfly0009.png"	x="174"	y="0"	width="41"	height="54" frameX="-16" frameY="-0" frameWidth="73" frameHeight="54"/>
+	<SubTexture name="butterfly0010.png"	x="174"	y="0"	width="41"	height="54" frameX="-16" frameY="-0" frameWidth="73" frameHeight="54"/>
+	<SubTexture name="butterfly0011.png"	x="0"	y="149"	width="61"	height="53" frameX="-6" frameY="-1" frameWidth="73" frameHeight="54"/>
+	<SubTexture name="butterfly0012.png"	x="0"	y="149"	width="61"	height="53" frameX="-6" frameY="-1" frameWidth="73" frameHeight="54"/>
+	<SubTexture name="butterfly0013.png"	x="0"	y="0"	width="73"	height="49" frameX="-0" frameY="-2" frameWidth="73" frameHeight="54"/>
+	<SubTexture name="butterfly0014.png"	x="0"	y="0"	width="73"	height="49" frameX="-0" frameY="-2" frameWidth="73" frameHeight="54"/>
+	<SubTexture name="butterfly0015.png"	x="0"	y="99"	width="73"	height="49" frameX="-0" frameY="-2" frameWidth="73" frameHeight="54"/>
+	<SubTexture name="butterfly0016.png"	x="0"	y="99"	width="73"	height="49" frameX="-0" frameY="-2" frameWidth="73" frameHeight="54"/>
+	<SubTexture name="butterfly0017.png"	x="62"	y="149"	width="61"	height="53" frameX="-6" frameY="-1" frameWidth="73" frameHeight="54"/>
+	<SubTexture name="butterfly0018.png"	x="62"	y="149"	width="61"	height="53" frameX="-6" frameY="-1" frameWidth="73" frameHeight="54"/>
+	<SubTexture name="butterfly0019.png"	x="74"	y="54"	width="53"	height="54" frameX="-10" frameY="-0" frameWidth="73" frameHeight="54"/>
+	<SubTexture name="butterfly0020.png"	x="74"	y="54"	width="53"	height="54" frameX="-10" frameY="-0" frameWidth="73" frameHeight="54"/>
+	<SubTexture name="butterfly0021.png"	x="128"	y="54"	width="45"	height="54" frameX="-14" frameY="-0" frameWidth="73" frameHeight="54"/>
+	<SubTexture name="butterfly0022.png"	x="128"	y="54"	width="45"	height="54" frameX="-14" frameY="-0" frameWidth="73" frameHeight="54"/>
+	<SubTexture name="butterfly0023.png"	x="170"	y="164"	width="41"	height="54" frameX="-16" frameY="-0" frameWidth="73" frameHeight="54"/>
+	<SubTexture name="butterfly0024.png"	x="170"	y="164"	width="41"	height="54" frameX="-16" frameY="-0" frameWidth="73" frameHeight="54"/>
+	<SubTexture name="butterfly0025.png"	x="74"	y="0"	width="61"	height="53" frameX="-6" frameY="-1" frameWidth="73" frameHeight="54"/>
+	<SubTexture name="butterfly0026.png"	x="74"	y="0"	width="61"	height="53" frameX="-6" frameY="-1" frameWidth="73" frameHeight="54"/>
+	<SubTexture name="butterfly0027.png"	x="0"	y="0"	width="73"	height="49" frameX="-0" frameY="-2" frameWidth="73" frameHeight="54"/>
+	<SubTexture name="butterfly0028.png"	x="0"	y="0"	width="73"	height="49" frameX="-0" frameY="-2" frameWidth="73" frameHeight="54"/>
+	<SubTexture name="butterfly0029.png"	x="0"	y="50"	width="73"	height="48" frameX="-0" frameY="-3" frameWidth="73" frameHeight="54"/>
+	<SubTexture name="butterfly0030.png"	x="0"	y="50"	width="73"	height="48" frameX="-0" frameY="-3" frameWidth="73" frameHeight="54"/>
+</TextureAtlas>
