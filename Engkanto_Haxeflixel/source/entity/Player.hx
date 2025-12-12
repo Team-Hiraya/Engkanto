@@ -19,7 +19,7 @@ class Player extends FlxSprite {
         super(X, Y);
 
         // Raya Placeholder
-        makeGraphic(120,180,0xFFFF3333);
+		loadGraphic("assets/images/placeholder_Raya_Fixed.png", true, 120, 180);
 
         // Physics
         acceleration.y = gravity;
