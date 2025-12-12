@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="Despair.png">
+	<!--
+	Created with ShoeBox
+	http://renderhjs.net/shoebox/
+	-->
+	<SubTexture name="Despair0000" x="0" y="0" width="0" height="0" frameX="-68" frameY="-28" frameWidth="136" frameHeight="56"/>
+	<SubTexture name="Despair0001" x="0" y="0" width="0" height="0" frameX="-68" frameY="-28" frameWidth="136" frameHeight="56"/>
+	<SubTexture name="Despair0002" x="0" y="0" width="125" height="40" frameX="-5" frameY="-13" frameWidth="136" frameHeight="56"/>
+	<SubTexture name="Despair0003" x="0" y="0" width="125" height="40" frameX="-5" frameY="-13" frameWidth="136" frameHeight="56"/>
+	<SubTexture name="Despair0004" x="0" y="40" width="136" height="51" frameX="0" frameY="-3" frameWidth="136" frameHeight="56"/>
+	<SubTexture name="Despair0005" x="0" y="40" width="136" height="51" frameX="0" frameY="-3" frameWidth="136" frameHeight="56"/>
+	<SubTexture name="Despair0006" x="0" y="91" width="136" height="55" frameX="0" frameY="-1" frameWidth="136" frameHeight="56"/>
+	<SubTexture name="Despair0007" x="0" y="91" width="136" height="55" frameX="0" frameY="-1" frameWidth="136" frameHeight="56"/>
+	<SubTexture name="Despair0008" x="0" y="91" width="136" height="55" frameX="0" frameY="-1" frameWidth="136" frameHeight="56"/>
+	<SubTexture name="Despair0009" x="0" y="91" width="136" height="55" frameX="0" frameY="-1" frameWidth="136" frameHeight="56"/>
+	<SubTexture name="Despair0010" x="0" y="146" width="136" height="56"/>
+	<SubTexture name="Despair0011" x="0" y="146" width="136" height="56"/>
+	<SubTexture name="Despair0012" x="0" y="146" width="136" height="56"/>
+	<SubTexture name="Despair0013" x="0" y="146" width="136" height="56"/>
+	<SubTexture name="Despair0014" x="0" y="202" width="136" height="56"/>
+	<SubTexture name="Despair0015" x="0" y="202" width="136" height="56"/>
+	<SubTexture name="Despair0016" x="0" y="258" width="136" height="56"/>
+	<SubTexture name="Despair0017" x="0" y="258" width="136" height="56"/>
+	<SubTexture name="Despair0018" x="0" y="314" width="136" height="56"/>
+	<SubTexture name="Despair0019" x="0" y="314" width="136" height="56"/>
+	<SubTexture name="Despair0020" x="0" y="370" width="136" height="56"/>
+	<SubTexture name="Despair0021" x="0" y="370" width="136" height="56"/>
+	<SubTexture name="Despair0022" x="0" y="426" width="136" height="56"/>
+	<SubTexture name="Despair0023" x="0" y="426" width="136" height="56"/>
+	<SubTexture name="Despair0024" x="0" y="426" width="136" height="56"/>
+</TextureAtlas>
