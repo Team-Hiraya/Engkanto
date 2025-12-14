@@ -26,8 +26,6 @@ class Enemy extends FlxSprite {
     }
 
     override public function update(elapsed:Float) {
-        super.update(elapsed);
-
-    }
-
+		super.update(elapsed);
+	}
 }
