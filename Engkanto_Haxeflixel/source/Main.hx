@@ -1,7 +1,7 @@
 package;
 
-
 import flixel.FlxGame;
+import lime.tools.Platform;
 import openfl.display.Sprite;
 
 class Main extends Sprite
