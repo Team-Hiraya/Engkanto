@@ -47,6 +47,10 @@ class Player extends FlxSprite {
 
     }
 
+	/**
+	 * MOVEMENT METHOD /
+	 * Movement of the player
+	 */
     private function movement():Void {
         var left = FlxG.keys.pressed.LEFT || FlxG.keys.pressed.A;
         var right = FlxG.keys.pressed.RIGHT || FlxG.keys.pressed.D;
@@ -64,6 +68,10 @@ class Player extends FlxSprite {
         }
     }
 
+	/**
+	 * JUMP METHOD /
+	 * Jumping Ability of the player
+	 */
     private function jump() {
         var jumpPressed = FlxG.keys.pressed.UP || FlxG.keys.pressed.W || FlxG.keys.pressed.SPACE;
 
@@ -77,6 +85,11 @@ class Player extends FlxSprite {
         }
     }
 
+	/**
+	 * RESET METHOD /
+	 * Resets the player overall /
+	 * param : (X:Float, Y:Float) / Sets the player reset position
+	 */
     override public function reset(X:Float, Y:Float):Void {
         setPosition(X,Y);
         velocity.set(0,0);

@@ -1,12 +1,12 @@
 package;
 
+import entity.Enemy;
 import entity.Player;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxState;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.util.FlxColor;
-import lime.media.FlashAudioContext;
 
 /**
  * The PlayState class
@@ -14,10 +14,12 @@ import lime.media.FlashAudioContext;
  */
 class PlayState extends FlxState
 {
+	// Making objects
 	var foreground:FlxSprite;
 	var background:FlxSprite;
 	var ground:FlxSprite;
 	var player:Player;
+	var enemy:Enemy;
 
 	/*
 		The create() method
@@ -26,26 +28,28 @@ class PlayState extends FlxState
 	override public function create()
 	{
 		super.create();
-		// camera
+		// Background
 		background = new FlxSprite();
 		background.loadGraphic("assets/images/placeholder_bg.jpg");
 		add(background);
+		// Foreground
 		foreground = new FlxSprite();
 		foreground.loadGraphic("assets/images/placeholder_fg.png");
 		add(foreground);
 
-		// create player
+		// player
 		player = new Player(100, 100);
 		add(player);
+
+		// Enemy
+		enemy = new Enemy(0, 0);
+		add(enemy);
 
 		// ground platforms
 		ground = new FlxSprite(0, FlxG.height - 40);
 		ground.makeGraphic(FlxG.width, 40, FlxColor.GREEN);
 		ground.immovable = true;
 		add(ground);
-
-		
-
 	}
 
 	/*
@@ -58,8 +62,6 @@ class PlayState extends FlxState
 		FlxG.collide(player, ground);
 
 		FlxG.collide(player, platforms);
-
-		FlxG.camera.follow(player);
 
 		if (player.y > FlxG.height + 100)
 		{
