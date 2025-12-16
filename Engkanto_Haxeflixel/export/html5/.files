@@ -1,7 +1,5 @@
 export/html5/bin/assets/data/data-goes-here.txt
 export/html5/bin/assets/data/Template.xml
-export/html5/bin/assets/images/Background.png
-export/html5/bin/assets/images/Background.xml
 export/html5/bin/assets/images/Despair.png
 export/html5/bin/assets/images/Despair.xml
 export/html5/bin/assets/images/fly.png
@@ -13,8 +11,6 @@ export/html5/bin/assets/images/placeholder_fg.png
 export/html5/bin/assets/images/placeholder_Raya_Fixed.png
 export/html5/bin/assets/images/sprites.png
 export/html5/bin/assets/images/sprites.xml
-export/html5/bin/assets/images/WoodWall.png
-export/html5/bin/assets/images/WoodWall.xml
 export/html5/bin/assets/music/music-goes-here.txt
 export/html5/bin/assets/sounds/sounds-go-here.txt
 export/html5/bin/flixel/sounds/beep.mp3
