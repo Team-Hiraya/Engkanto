@@ -1,46 +1,74 @@
-<div align="center">
-  <img width="600" height="500" alt="Picsart_25-09-22_11-12-39-242" src="https://github.com/user-attachments/assets/da47769a-287a-4921-b73e-06073f3b9efb" />
-</div>
+# Engkanto
+### By **Team Hiraya**
 
-# 🌌 Engkanto
-
-**Engkanto** is a **2D action-adventure game** developed by **Team Hiraya**, inspired by *Hollow Knight* and *Hollow Knight: Silksong*, reimagined through a **Filipino setting**.  
-Set in a **dark, mysterious world** filled with creatures from **Philippine mythology**, the game blends **exploration**, **combat**, and **storytelling** into a deeply **atmospheric experience**.
+<p align="center">
+  <em>Where imagination takes root and dreams take form.</em>
+</p>
 
 ---
 
-## 🎮 Story
+## 🌀 **About Team Hiraya**
 
-You play as **Laurel**, a young girl who mysteriously wakes up in an unfamiliar world teeming with **spirits, gods, and monsters**.  
-Armed only with her **arnis**, Laurel must journey across **diverse regions**, uncover the secrets of the land, and find a way back to the **real world**.
-
----
-
-## 🌏 World & Characters
-
-- Encounter characters speaking in **different Filipino dialects**.  
-- Learn fragments of **lore**, receive **guidance**, and face **challenges** that deepen the world’s mystery.  
-- Explore a world filled with **hidden histories** and mystical creatures from **Philippine mythology**.
+We are a small indie collective driven by imagination and purpose — crafting games, animation, art, and more. Rooted in the meaning of **Hiraya** — *"the fruit of one's hopes and dreams"* — our work reflects a balance of **vision, discipline, and respect**.  
+This is where creativity grows, ideas take shape, and dreams find their form.
 
 ---
 
-## ⚔️ Gameplay
+## 🎮 **The Game: Engkanto**
 
-- **Exploration**: Discover diverse regions and hidden secrets.  
-- **Combat**: Fast-paced battles using Laurel's arnis.  
-- **Storytelling**: Emotional and immersive narrative woven into gameplay.
+> A 2D action-adventure metroidvania, reimagined through the lens of Filipino myth and mystery.
 
----
+**Engkanto** is inspired by the atmospheric worlds of *Hollow Knight* and *Hollow Knight: Silksong*, now woven into a setting rich with Philippine folklore. Explore a dark, mysterious realm teeming with creatures from local mythology — where exploration, combat, and storytelling merge into a deeply immersive experience.
 
-## ✨ Features
+### 🌿 **The Story**
 
-- Filipino-inspired world design and mythology.  
-- Unique characters with diverse dialects and stories.  
-- Atmospheric 2D art and immersive sound design.  
-- Engaging combat and exploration mechanics.  
-- Developed with **love and passion by Team Hiraya**.
+You play as **Raya**, a young girl who awakens in an unfamiliar spirit-world filled with gods, monsters, and enigmatic beings. Armed only with her **arnis** (traditional Filipino fighting sticks), she must journey through diverse, haunting regions, uncover the land's secrets, and find her way back to the real world.
+
+Along the way, Raya meets characters who speak in various Filipino dialects, each offering fragments of lore, guidance, and challenges. The game blends **fast-paced combat**, **intricate exploration**, and **emotional storytelling**, inviting you to uncover the truth behind Raya's arrival and the hidden history of the Engkanto realm itself.
 
 ---
 
-> Dive into **Engkanto** and uncover the truth behind Laurel’s presence in this strange world, and the hidden history of the **Engkanto** realm itself.
+## ✨ **Inspirations**
 
+- Hollow Knight
+- Hollow Knight: Silksong
+- Shantae and the Seven Sirens
+- Ori and the Blind Forest
+- Raman Legends
+
+---
+
+## 🧩 **Genre**
+
+`Metroidvania` `Platformer` `Single Player` `Adventure` `Puzzle` `Emotional` `Indie` `Fantasy` `Open World`
+
+---
+
+## 🖥️ **Platforms**
+
+📱 **Mobile** | 🌐 **Web** | 🖥️ **PC**
+
+---
+
+## 🛠️ **Development Tools**
+
+- **Visual Studio Code**
+- **Krita**
+- **Clip Studio Paint**
+- **Adobe Flash CS6**
+- **Spine 2D**
+- **ShoeBox**
+
+---
+
+## 📜 **Team Vision**
+
+At Team Hiraya, we believe in creating experiences that resonate — not just as games, but as stories told through interaction, artistry, and heart. *Engkanto* is our love letter to Filipino mythology, to the explorers who cherish deep worlds, and to every dreamer who believes in the magic of a well-told tale.
+
+*Thank you for visiting our world.*
+
+---
+<p align="center">
+  <strong>Follow our journey.</strong><br>
+  <em>More updates, art, and lore coming soon.</em>
+</p>
