@@ -1,24 +1,34 @@
 package state;
 
+import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxState;
+import flixel.input.mouse.FlxMouse;
+import flixel.ui.FlxButton;
 
 class MenuState extends FlxState
 {
+	public var _NewGameButton:FlxButton;
+
 	override public function create():Void
 	{
 		super.create();
 		// var background = new FlxSprite();
 		// background.loadGraphic("assets/images/Background.png");
 		// add(background);
-		displayObject("assets/images/menuState/Background.png", 0, 0);
-		displayObject("assets/images/menuState/Wood_Wall.png", 360, -20);
-		displayObject("assets/images/menuState/NewGame_Btn.png", 460, -20);
+		mainMenu();
 	}
 
 	override public function update(elapsed:Float):Void
 	{
 		super.update(elapsed);
+	}
+
+	public function mainMenu()
+	{
+		displayObject("assets/images/menuState/Background.png", 0, 0);
+		displayObject("assets/images/menuState/Wood_Wall.png", 360, -20);
+		newGameBtn();
 	}
 
 	/**
@@ -34,5 +44,16 @@ class MenuState extends FlxState
 		object.x = x;
 		object.y = y;
 		add(object);
+	}
+	private function newGameBtn()
+	{
+		_NewGameButton = new FlxButton(440, -20, onClicked);
+		_NewGameButton.loadGraphic("assets/images/menuState/NewGame_Btn.png", false);
+		add(_NewGameButton);
+	}
+
+	private function onClicked()
+	{
+		FlxG.switchState(CreditState.new);
 	}
 }
