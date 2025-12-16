@@ -26,7 +26,9 @@ class MenuState extends FlxState
 
 	public function mainMenu()
 	{
+		// Background
 		displayObject("assets/images/menuState/Background.png", 0, 0);
+		// The wooden wall in the right
 		displayObject("assets/images/menuState/Wood_Wall.png", 360, -20);
 		newGameBtn();
 	}
@@ -45,6 +47,9 @@ class MenuState extends FlxState
 		object.y = y;
 		add(object);
 	}
+	/**
+	 * New Game Button
+	 */
 	private function newGameBtn()
 	{
 		_NewGameButton = new FlxButton(440, -20, onClicked);
@@ -52,6 +57,9 @@ class MenuState extends FlxState
 		add(_NewGameButton);
 	}
 
+	/**
+	 * This function is called in newGameBtn()
+	 */
 	private function onClicked()
 	{
 		FlxG.switchState(CreditState.new);
