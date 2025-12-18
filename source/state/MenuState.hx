@@ -1,5 +1,6 @@
 package state;
 
+import chapterOne.ActOne;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxState;
@@ -62,6 +63,6 @@ class MenuState extends FlxState
 	 */
 	private function onClicked()
 	{
-		FlxG.switchState(CreditState.new);
+		FlxG.switchState(ActOne.new);
 	}
 }
