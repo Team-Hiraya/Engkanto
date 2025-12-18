@@ -13,8 +13,16 @@ export/neko/bin/assets/images/dump/sprites.png
 export/neko/bin/assets/images/dump/sprites.xml
 export/neko/bin/assets/images/menuState/Background.png
 export/neko/bin/assets/images/menuState/Background.xml
+export/neko/bin/assets/images/menuState/Credits_Btn.png
+export/neko/bin/assets/images/menuState/Credits_Btn.xml
+export/neko/bin/assets/images/menuState/Logo.png
+export/neko/bin/assets/images/menuState/Logo.xml
 export/neko/bin/assets/images/menuState/NewGame_Btn.png
 export/neko/bin/assets/images/menuState/NewGame_Btn.xml
+export/neko/bin/assets/images/menuState/SaveState.png
+export/neko/bin/assets/images/menuState/SaveState.xml
+export/neko/bin/assets/images/menuState/Settings_Btn.png
+export/neko/bin/assets/images/menuState/Settings_Btn.xml
 export/neko/bin/assets/images/menuState/Wood_Wall.png
 export/neko/bin/assets/images/menuState/Wood_Wall.xml
 export/neko/bin/assets/music/music-goes-here.txt

@@ -25,7 +25,7 @@ class MenuState extends FlxState
 	}
 
 	/**
-	 * Use this method to display all methods so that it is all in one
+	 * Use this method to display all methods so that it is all in one	
 	 */
 	public function mainMenu()
 	{

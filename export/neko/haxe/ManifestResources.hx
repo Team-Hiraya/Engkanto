@@ -106,8 +106,16 @@ import sys.FileSystem;
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_dump_sprites_xml extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_background_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_background_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_credits_btn_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_credits_btn_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_logo_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_logo_xml extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_newgame_btn_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_newgame_btn_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_savestate_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_savestate_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_settings_btn_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_settings_btn_xml extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_wood_wall_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_wood_wall_xml extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_music_music_goes_here_txt extends null { }
