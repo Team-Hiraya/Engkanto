@@ -24,6 +24,9 @@ class MenuState extends FlxState
 		super.update(elapsed);
 	}
 
+	/**
+	 * Use this method to display all methods so that it is all in one
+	 */
 	public function mainMenu()
 	{
 		// Background
