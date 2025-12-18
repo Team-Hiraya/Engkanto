@@ -1,6 +1,9 @@
 # Engkanto
 ### By **Team Hiraya**
 
+<img width="2048" height="2048" alt="TeamHiraya" src="https://github.com/user-attachments/assets/d4055531-7eb2-42b8-85da-9d2ca76ccd10" />
+
+
 <p align="center">
   <em>Where imagination takes root and dreams take form.</em>
 </p>
