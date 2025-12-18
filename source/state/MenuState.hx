@@ -4,7 +4,6 @@ import chapterOne.ActOne;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxState;
-import flixel.input.mouse.FlxMouse;
 import flixel.ui.FlxButton;
 
 class MenuState extends FlxState
