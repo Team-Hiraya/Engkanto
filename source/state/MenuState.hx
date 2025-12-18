@@ -13,9 +13,7 @@ class MenuState extends FlxState
 	override public function create():Void
 	{
 		super.create();
-		// var background = new FlxSprite();
-		// background.loadGraphic("assets/images/Background.png");
-		// add(background);
+		FlxG.debugger.visible = true;
 		mainMenu();
 	}
 
