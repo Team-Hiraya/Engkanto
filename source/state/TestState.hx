@@ -59,6 +59,6 @@ class TestState extends FlxState
             
         // Back to menu with Escape
         if (FlxG.keys.justPressed.ESCAPE)
-            FlxG.switchState(new MenuState());
+            FlxG.switchState(MenuState.new);
     }
 }
