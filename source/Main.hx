@@ -1,15 +1,15 @@
 package;
 
 import flixel.FlxGame;
-import lime.tools.Platform;
+import flixel.FlxState;
 import openfl.display.Sprite;
-import state.MenuState;
+import state.MenuState; // Add this import
 
 class Main extends Sprite
 {
 	public function new()
 	{
 		super();
-		addChild(new FlxGame(640, 360, MenuState));
+		addChild(new FlxGame(1280, 720, MenuState)); // Start with MenuState
 	}
 }

@@ -1,68 +1,77 @@
 package state;
 
-import chapterOne.ActOne;
 import flixel.FlxG;
-import flixel.FlxSprite;
 import flixel.FlxState;
-import flixel.ui.FlxButton;
+import flixel.text.FlxText;
+import flixel.util.FlxColor;
 
 class MenuState extends FlxState
 {
-	public var _NewGameButton:FlxButton;
-
 	override public function create():Void
 	{
 		super.create();
-		FlxG.debugger.visible = true;
-		mainMenu();
+		// Title
+		var title = new FlxText(0, 50, FlxG.width, "ENGKANTO");
+		title.setFormat(null, 32, FlxColor.CYAN, CENTER, SHADOW, FlxColor.BLUE);
+		title.screenCenter(X);
+		add(title);
+
+		// Instructions for desktop
+		var instructions = new FlxText(0, 120, FlxG.width, "Press ENTER to Start");
+		instructions.setFormat(null, 24, FlxColor.WHITE, CENTER);
+		instructions.screenCenter(X);
+		add(instructions);
+
+		// Mobile touch instruction
+		var mobileText = new FlxText(0, 160, FlxG.width, "Or click/tap anywhere to start");
+		mobileText.setFormat(null, 20, FlxColor.YELLOW, CENTER);
+		mobileText.screenCenter(X);
+		add(mobileText);
+
+		// Controls info
+		var controls = new FlxText(0, 220, FlxG.width, "Controls:\n" + "Desktop: Arrow Keys + Space\n" + "Mobile: Use on-screen buttons");
+		controls.setFormat(null, 18, FlxColor.LIME, CENTER);
+		controls.screenCenter(X);
+		add(controls);
+
+		// Credits
+		var credits = new FlxText(0, FlxG.height - 40, FlxG.width, "Press ESC to Quit");
+		credits.setFormat(null, 16, FlxColor.GRAY, CENTER);
+		credits.screenCenter(X);
+		add(credits);
 	}
 
 	override public function update(elapsed:Float):Void
 	{
 		super.update(elapsed);
+		// Start game with Enter
+		if (FlxG.keys.justPressed.ENTER)
+		{
+			startGame();
+		}
+        
+		// Check for any click/tap anywhere
+		if (FlxG.mouse.justPressed)
+		{
+			startGame();
+		}
+        
+		// Quit with Escape
+		if (FlxG.keys.justPressed.ESCAPE)
+		{
+			// Use Sys.exit() instead of FlxG.exit()
+			#if sys
+			Sys.exit(0);
+			#elseif js
+			// For HTML5, you can't really "exit"
+			// Just show a message or redirect
+			js.Browser.window.alert("Game closed");
+			#end
+		}
 	}
 
-	/**
-	 * Use this method to display all methods so that it is all in one	
-	 */
-	public function mainMenu()
+	private function startGame():Void
 	{
-		// Background
-		displayObject("assets/images/menuState/Background.png", 0, 0);
-		// The wooden wall in the right
-		displayObject("assets/images/menuState/Wood_Wall.png", 360, -20);
-		newGameBtn();
-	}
-
-	/**
-	 * Displays the object
-	 * @param location location of the image (String)
-	 * @param x horizontal position
-	 * @param y vertical position
-	 */
-	private function displayObject(location:String, x:Int, y:Int)
-	{
-		var object = new FlxSprite();
-		object.loadGraphic(location);
-		object.x = x;
-		object.y = y;
-		add(object);
-	}
-	/**
-	 * New Game Button
-	 */
-	private function newGameBtn()
-	{
-		_NewGameButton = new FlxButton(440, -20, onClicked);
-		_NewGameButton.loadGraphic("assets/images/menuState/NewGame_Btn.png", false);
-		add(_NewGameButton);
-	}
-
-	/**
-	 * This function is called in newGameBtn()
-	 */
-	private function onClicked()
-	{
-		FlxG.switchState(ActOne.new);
+		FlxG.switchState(TestState.new);
 	}
 }

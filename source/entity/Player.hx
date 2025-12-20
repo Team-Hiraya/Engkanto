@@ -1,108 +1,116 @@
 package entity;
 
 import flixel.FlxG;
-import flixel.FlxObject;
 import flixel.FlxSprite;
 
-class Player extends FlxSprite {
-    // Movement Properties
-    public var moveSpeed:Float = 150;
-    public var jumpPower:Float = 250;
-    public var gravity:Float = 1000;
-
-    // Tracker
-    public var canJump:Bool = true;
-    public var isOnGround:Bool = false;
+class Player extends FlxSprite
+{
+	public var runSpeed:Int = 180;
+	public var jumpForce:Float = -320;
+	public var mobileControls:MobileControls;
     
-    // Constructor - runs when creating a new Player
-    public function new(X:Float = 0, Y:Float = 0) {
-        super(X, Y);
-
-        // Raya Placeholder
-		loadGraphic("assets/images/entity/Raya.png", false, 54, 151);
-
-        // Physics
-        acceleration.y = gravity;
-        drag.x = moveSpeed * 10;
-
-        // Collision
-		setSize(54, 151);
-        offset.set(2,1);
-
-        // Max Velocity
-        maxVelocity.set(moveSpeed * 1.5, 800);
-    }
-
-    // Update runs every frame
-    override public function update(elapsed:Float) {
-        super.update(elapsed);
-
-        acceleration.x = 0;
+	// Jump tracking
+	private var isJumping:Bool = false;
+	private var wasOnFloor:Bool = false;
+    
+	public function new(x:Float = 100, y:Float = 100, ?controls:MobileControls = null)
+	{
+		super(x, y);
+		this.mobileControls = controls;
         
-        movement();
-
-        jump();
-
-        isOnGround = isTouching(FLOOR);
-
+		// Simple placeholder (green square)
+		makeGraphic(32, 48, 0xFF00FF00);
+        
+        // Physics
+		drag.x = runSpeed * 8;
+		acceleration.y = 800;
+		maxVelocity.set(runSpeed, 800);
+        
+		// Collision box
+		setSize(24, 40);
+		offset.set(4, 4);
     }
 
-	/**
-	 * MOVEMENT METHOD /
-	 * Movement of the player
-	 */
-    private function movement():Void {
-        var left = FlxG.keys.pressed.LEFT || FlxG.keys.pressed.A;
-        var right = FlxG.keys.pressed.RIGHT || FlxG.keys.pressed.D;
+	override public function update(elapsed:Float):Void
+	{
+        super.update(elapsed);
+		handleMovement(elapsed);
+		checkFloorStatus();
+	}
 
-        // Move Left
-        if (left && !right) {
-            acceleration.x = -moveSpeed * 10;
+	private function handleMovement(elapsed:Float):Void
+	{
+		// Get input from mobile controls first
+		var left = false;
+		var right = false;
+		var jumpJust = false;
+        
+		if (mobileControls != null)
+		{
+			left = mobileControls.leftPressed;
+			right = mobileControls.rightPressed;
+			jumpJust = mobileControls.jumpJustPressed;
+		}
+        
+		// Add keyboard input
+		left = left || FlxG.keys.anyPressed([LEFT, A]);
+		right = right || FlxG.keys.anyPressed([RIGHT, D]);
+		jumpJust = jumpJust || FlxG.keys.anyJustPressed([SPACE, Z, UP, W]);
+        
+		// Move left/right
+		if (left && !right)
+			velocity.x = -runSpeed;
+		else if (right && !left)
+			velocity.x = runSpeed;
+		else
+			velocity.x = 0;
+        
+		// Handle jumping (only if on floor)
+		if (jumpJust && isTouching(FLOOR))
+		{
+			velocity.y = jumpForce;
+			isJumping = true;
+		}
+        
+		// Variable jump height - release jump to fall faster
+		var jumpHeld:Bool = FlxG.keys.anyPressed([SPACE, Z, UP, W]);
+		if (mobileControls != null && mobileControls.jumpPressed)
+		{
+			jumpHeld = true;
         }
-        // Move Right
-        else if (right && !left) {
-            acceleration.x = moveSpeed * 10;
-        }
-        else {
-            velocity.x *= 0.9;
-        }
+		if (!jumpHeld && velocity.y < 0 && isJumping)
+		{
+			velocity.y *= 0.6; // Reduce upward velocity
+		}
+		// Face direction
 		if (velocity.x > 0)
-		{
-			flipX = true;
-		}
-		else if (velocity.x < 0)
-		{
 			flipX = false;
+		else if (velocity.x < 0)
+			flipX = true;
+    }
+
+	private function checkFloorStatus():Void
+	{
+		// Check if we just landed
+		var isOnFloor = isTouching(FLOOR);
+        
+		if (isOnFloor && !wasOnFloor)
+		{
+			// Just landed
+			isJumping = false;
+        }
+		else if (!isOnFloor && wasOnFloor)
+		{
+			// Just left the ground
+			isJumping = true;
 		}
+        
+		wasOnFloor = isOnFloor;
     }
 
-	/**
-	 * JUMP METHOD /
-	 * Jumping Ability of the player
-	 */
-    private function jump() {
-        var jumpPressed = FlxG.keys.pressed.UP || FlxG.keys.pressed.W || FlxG.keys.pressed.SPACE;
-
-        canJump = isOnGround;
-
-        if (jumpPressed && canJump) {
-            velocity.y = -jumpPower;
-        }
-        if (velocity.y < -150 && !FlxG.keys.pressed.UP && !FlxG.keys.pressed.W && !FlxG.keys.pressed.SPACE) {
-            velocity.y = -150;
-        }
-    }
-
-	/**
-	 * RESET METHOD /
-	 * Resets the player overall /
-	 * param : (X:Float, Y:Float) / Sets the player reset position
-	 */
-    override public function reset(X:Float, Y:Float):Void {
-        setPosition(X,Y);
-        velocity.set(0,0);
-        canJump = true;
-        isOnGround = false;
-    }
-
+	// Simple jump check (you can call this from your state)
+	public function canJump():Bool
+	{
+		return isTouching(FLOOR);
+	}
 }
