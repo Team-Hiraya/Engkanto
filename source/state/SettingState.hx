@@ -7,7 +7,7 @@ import flixel.util.FlxColor;
 class SettingState extends FlxState {
     override public function create():Void {
         super.create();
-
+		showText("Settings State!");
         
     }
 

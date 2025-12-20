@@ -19,14 +19,14 @@ class Player extends FlxSprite {
         super(X, Y);
 
         // Raya Placeholder
-		loadGraphic("assets/images/placeholder_Raya_Fixed.png", false, 120, 180);
+		loadGraphic("assets/images/entity/Raya.png", false, 54, 151);
 
         // Physics
         acceleration.y = gravity;
         drag.x = moveSpeed * 10;
 
         // Collision
-        setSize(120,180);
+		setSize(54, 151);
         offset.set(2,1);
 
         // Max Velocity
@@ -66,6 +66,14 @@ class Player extends FlxSprite {
         else {
             velocity.x *= 0.9;
         }
+		if (velocity.x > 0)
+		{
+			flipX = true;
+		}
+		else if (velocity.x < 0)
+		{
+			flipX = false;
+		}
     }
 
 	/**

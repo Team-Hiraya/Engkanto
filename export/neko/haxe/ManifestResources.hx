@@ -104,6 +104,10 @@ import sys.FileSystem;
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_dump_placeholder_raya_fixed_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_dump_sprites_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_dump_sprites_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_engkanto_icon_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_engkanto_icon_svg extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_entity_raya_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_entity_raya_xml extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_background_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_background_xml extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_credits_btn_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }

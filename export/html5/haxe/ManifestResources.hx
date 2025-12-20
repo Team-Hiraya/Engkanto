@@ -75,7 +75,7 @@ import sys.FileSystem;
 
 		var data, manifest, library, bundle;
 
-		data = '{"name":null,"assets":"aoy4:pathy34:assets%2Fdata%2Fdata-goes-here.txty4:sizezy4:typey4:TEXTy2:idR1y7:preloadtgoR0y28:assets%2Fdata%2FTemplate.xmlR2i214R3R4R5R7R6tgoR0y29:assets%2Fimages%2FDespair.pngR2i9807R3y5:IMAGER5R8R6tgoR0y29:assets%2Fimages%2FDespair.xmlR2i2548R3R4R5R10R6tgoR0y25:assets%2Fimages%2Ffly.pngR2i6845R3R9R5R11R6tgoR0y25:assets%2Fimages%2Ffly.xmlR2i4219R3R4R5R12R6tgoR0y36:assets%2Fimages%2Fimages-go-here.txtR2zR3R4R5R13R6tgoR0y37:assets%2Fimages%2FplaceholderRaya.pngR2i742868R3R9R5R14R6tgoR0y36:assets%2Fimages%2Fplaceholder_bg.jpgR2i1546272R3R9R5R15R6tgoR0y36:assets%2Fimages%2Fplaceholder_fg.pngR2i611065R3R9R5R16R6tgoR0y44:assets%2Fimages%2Fplaceholder_Raya_Fixed.pngR2i365235R3R9R5R17R6tgoR0y29:assets%2Fimages%2Fsprites.pngR2i6691R3R9R5R18R6tgoR0y29:assets%2Fimages%2Fsprites.xmlR2i4227R3R4R5R19R6tgoR0y36:assets%2Fmusic%2Fmusic-goes-here.txtR2zR3R4R5R20R6tgoR0y36:assets%2Fsounds%2Fsounds-go-here.txtR2zR3R4R5R21R6tgoR2i8220R3y5:MUSICR5y26:flixel%2Fsounds%2Fbeep.mp3y9:pathGroupaR23y26:flixel%2Fsounds%2Fbeep.ogghR6tgoR2i39706R3R22R5y28:flixel%2Fsounds%2Fflixel.mp3R24aR26y28:flixel%2Fsounds%2Fflixel.ogghR6tgoR2i6840R3y5:SOUNDR5R25R24aR23R25hgoR2i33629R3R28R5R27R24aR26R27hgoR2i15744R3y4:FONTy9:classNamey35:__ASSET__flixel_fonts_nokiafc22_ttfR5y30:flixel%2Ffonts%2Fnokiafc22.ttfR6tgoR2i29724R3R29R30y36:__ASSET__flixel_fonts_monsterrat_ttfR5y31:flixel%2Ffonts%2Fmonsterrat.ttfR6tgoR0y33:flixel%2Fimages%2Fui%2Fbutton.pngR2i222R3R9R5R35R6tgoR0y36:flixel%2Fimages%2Flogo%2Fdefault.pngR2i484R3R9R5R36R6tgoR0y42:flixel%2Fimages%2Ftransitions%2Fcircle.pngR2i299R3R9R5R37R6tgoR0y53:flixel%2Fimages%2Ftransitions%2Fdiagonal_gradient.pngR2i730R3R9R5R38R6tgoR0y43:flixel%2Fimages%2Ftransitions%2Fdiamond.pngR2i236R3R9R5R39R6tgoR0y42:flixel%2Fimages%2Ftransitions%2Fsquare.pngR2i209R3R9R5R40R6tgh","rootPath":null,"version":2,"libraryArgs":[],"libraryType":null}';
+		data = '{"name":null,"assets":"aoy4:pathy34:assets%2Fdata%2Fdata-goes-here.txty4:sizezy4:typey4:TEXTy2:idR1y7:preloadtgoR0y28:assets%2Fdata%2FTemplate.xmlR2i214R3R4R5R7R6tgoR0y36:assets%2Fimages%2Fdump%2FDespair.pngR2i9807R3y5:IMAGER5R8R6tgoR0y36:assets%2Fimages%2Fdump%2FDespair.xmlR2i2548R3R4R5R10R6tgoR0y32:assets%2Fimages%2Fdump%2Ffly.pngR2i6845R3R9R5R11R6tgoR0y32:assets%2Fimages%2Fdump%2Ffly.xmlR2i4219R3R4R5R12R6tgoR0y43:assets%2Fimages%2Fdump%2Fimages-go-here.txtR2zR3R4R5R13R6tgoR0y44:assets%2Fimages%2Fdump%2FplaceholderRaya.pngR2i742868R3R9R5R14R6tgoR0y43:assets%2Fimages%2Fdump%2Fplaceholder_bg.jpgR2i1546272R3R9R5R15R6tgoR0y43:assets%2Fimages%2Fdump%2Fplaceholder_fg.pngR2i611065R3R9R5R16R6tgoR0y51:assets%2Fimages%2Fdump%2Fplaceholder_Raya_Fixed.pngR2i365235R3R9R5R17R6tgoR0y36:assets%2Fimages%2Fdump%2Fsprites.pngR2i6691R3R9R5R18R6tgoR0y36:assets%2Fimages%2Fdump%2Fsprites.xmlR2i4227R3R4R5R19R6tgoR0y35:assets%2Fimages%2FEngkanto_Icon.pngR2i10637239R3R9R5R20R6tgoR0y35:assets%2Fimages%2FEngkanto_Icon.svgR2i78475R3R4R5R21R6tgoR0y35:assets%2Fimages%2Fentity%2FRaya.pngR2i6136R3R9R5R22R6tgoR0y35:assets%2Fimages%2Fentity%2FRaya.xmlR2i596R3R4R5R23R6tgoR0y44:assets%2Fimages%2FmenuState%2FBackground.pngR2i39360R3R9R5R24R6tgoR0y44:assets%2Fimages%2FmenuState%2FBackground.xmlR2i564R3R4R5R25R6tgoR0y45:assets%2Fimages%2FmenuState%2FCredits_Btn.pngR2i4072R3R9R5R26R6tgoR0y45:assets%2Fimages%2FmenuState%2FCredits_Btn.xmlR2i578R3R4R5R27R6tgoR0y38:assets%2Fimages%2FmenuState%2FLogo.pngR2i11863R3R9R5R28R6tgoR0y38:assets%2Fimages%2FmenuState%2FLogo.xmlR2i562R3R4R5R29R6tgoR0y45:assets%2Fimages%2FmenuState%2FNewGame_Btn.pngR2i6054R3R9R5R30R6tgoR0y45:assets%2Fimages%2FmenuState%2FNewGame_Btn.xmlR2i562R3R4R5R31R6tgoR0y43:assets%2Fimages%2FmenuState%2FSaveState.pngR2i14304R3R9R5R32R6tgoR0y43:assets%2Fimages%2FmenuState%2FSaveState.xmlR2i582R3R4R5R33R6tgoR0y46:assets%2Fimages%2FmenuState%2FSettings_Btn.pngR2i5733R3R9R5R34R6tgoR0y46:assets%2Fimages%2FmenuState%2FSettings_Btn.xmlR2i586R3R4R5R35R6tgoR0y43:assets%2Fimages%2FmenuState%2FWood_Wall.pngR2i43307R3R9R5R36R6tgoR0y43:assets%2Fimages%2FmenuState%2FWood_Wall.xmlR2i550R3R4R5R37R6tgoR0y36:assets%2Fmusic%2Fmusic-goes-here.txtR2zR3R4R5R38R6tgoR0y36:assets%2Fsounds%2Fsounds-go-here.txtR2zR3R4R5R39R6tgoR2i8220R3y5:MUSICR5y26:flixel%2Fsounds%2Fbeep.mp3y9:pathGroupaR41y26:flixel%2Fsounds%2Fbeep.ogghR6tgoR2i39706R3R40R5y28:flixel%2Fsounds%2Fflixel.mp3R42aR44y28:flixel%2Fsounds%2Fflixel.ogghR6tgoR2i6840R3y5:SOUNDR5R43R42aR41R43hgoR2i33629R3R46R5R45R42aR44R45hgoR2i15744R3y4:FONTy9:classNamey35:__ASSET__flixel_fonts_nokiafc22_ttfR5y30:flixel%2Ffonts%2Fnokiafc22.ttfR6tgoR2i29724R3R47R48y36:__ASSET__flixel_fonts_monsterrat_ttfR5y31:flixel%2Ffonts%2Fmonsterrat.ttfR6tgoR0y33:flixel%2Fimages%2Fui%2Fbutton.pngR2i222R3R9R5R53R6tgoR0y36:flixel%2Fimages%2Flogo%2Fdefault.pngR2i484R3R9R5R54R6tgoR0y42:flixel%2Fimages%2Ftransitions%2Fcircle.pngR2i299R3R9R5R55R6tgoR0y53:flixel%2Fimages%2Ftransitions%2Fdiagonal_gradient.pngR2i730R3R9R5R56R6tgoR0y43:flixel%2Fimages%2Ftransitions%2Fdiamond.pngR2i236R3R9R5R57R6tgoR0y42:flixel%2Fimages%2Ftransitions%2Fsquare.pngR2i209R3R9R5R58R6tgh","rootPath":null,"version":2,"libraryArgs":[],"libraryType":null}';
 		manifest = AssetManifest.parse (data, rootPath);
 		library = AssetLibrary.fromManifest (manifest);
 		Assets.registerLibrary ("default", library);
@@ -96,17 +96,35 @@ import sys.FileSystem;
 
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_data_goes_here_txt extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_template_xml extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_despair_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_despair_xml extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_fly_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_fly_xml extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_images_go_here_txt extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_placeholderraya_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_placeholder_bg_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_placeholder_fg_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_placeholder_raya_fixed_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_sprites_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_sprites_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_dump_despair_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_dump_despair_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_dump_fly_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_dump_fly_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_dump_images_go_here_txt extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_dump_placeholderraya_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_dump_placeholder_bg_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_dump_placeholder_fg_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_dump_placeholder_raya_fixed_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_dump_sprites_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_dump_sprites_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_engkanto_icon_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_engkanto_icon_svg extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_entity_raya_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_entity_raya_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_background_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_background_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_credits_btn_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_credits_btn_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_logo_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_logo_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_newgame_btn_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_newgame_btn_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_savestate_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_savestate_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_settings_btn_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_settings_btn_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_wood_wall_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_wood_wall_xml extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_music_music_goes_here_txt extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_sounds_sounds_go_here_txt extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__flixel_sounds_beep_mp3 extends null { }
@@ -128,17 +146,35 @@ import sys.FileSystem;
 
 @:keep @:file("assets/data/data-goes-here.txt") @:noCompletion #if display private #end class __ASSET__assets_data_data_goes_here_txt extends haxe.io.Bytes {}
 @:keep @:file("assets/data/Template.xml") @:noCompletion #if display private #end class __ASSET__assets_data_template_xml extends haxe.io.Bytes {}
-@:keep @:image("assets/images/Despair.png") @:noCompletion #if display private #end class __ASSET__assets_images_despair_png extends lime.graphics.Image {}
-@:keep @:file("assets/images/Despair.xml") @:noCompletion #if display private #end class __ASSET__assets_images_despair_xml extends haxe.io.Bytes {}
-@:keep @:image("assets/images/fly.png") @:noCompletion #if display private #end class __ASSET__assets_images_fly_png extends lime.graphics.Image {}
-@:keep @:file("assets/images/fly.xml") @:noCompletion #if display private #end class __ASSET__assets_images_fly_xml extends haxe.io.Bytes {}
-@:keep @:file("assets/images/images-go-here.txt") @:noCompletion #if display private #end class __ASSET__assets_images_images_go_here_txt extends haxe.io.Bytes {}
-@:keep @:image("assets/images/placeholderRaya.png") @:noCompletion #if display private #end class __ASSET__assets_images_placeholderraya_png extends lime.graphics.Image {}
-@:keep @:image("assets/images/placeholder_bg.jpg") @:noCompletion #if display private #end class __ASSET__assets_images_placeholder_bg_jpg extends lime.graphics.Image {}
-@:keep @:image("assets/images/placeholder_fg.png") @:noCompletion #if display private #end class __ASSET__assets_images_placeholder_fg_png extends lime.graphics.Image {}
-@:keep @:image("assets/images/placeholder_Raya_Fixed.png") @:noCompletion #if display private #end class __ASSET__assets_images_placeholder_raya_fixed_png extends lime.graphics.Image {}
-@:keep @:image("assets/images/sprites.png") @:noCompletion #if display private #end class __ASSET__assets_images_sprites_png extends lime.graphics.Image {}
-@:keep @:file("assets/images/sprites.xml") @:noCompletion #if display private #end class __ASSET__assets_images_sprites_xml extends haxe.io.Bytes {}
+@:keep @:image("assets/images/dump/Despair.png") @:noCompletion #if display private #end class __ASSET__assets_images_dump_despair_png extends lime.graphics.Image {}
+@:keep @:file("assets/images/dump/Despair.xml") @:noCompletion #if display private #end class __ASSET__assets_images_dump_despair_xml extends haxe.io.Bytes {}
+@:keep @:image("assets/images/dump/fly.png") @:noCompletion #if display private #end class __ASSET__assets_images_dump_fly_png extends lime.graphics.Image {}
+@:keep @:file("assets/images/dump/fly.xml") @:noCompletion #if display private #end class __ASSET__assets_images_dump_fly_xml extends haxe.io.Bytes {}
+@:keep @:file("assets/images/dump/images-go-here.txt") @:noCompletion #if display private #end class __ASSET__assets_images_dump_images_go_here_txt extends haxe.io.Bytes {}
+@:keep @:image("assets/images/dump/placeholderRaya.png") @:noCompletion #if display private #end class __ASSET__assets_images_dump_placeholderraya_png extends lime.graphics.Image {}
+@:keep @:image("assets/images/dump/placeholder_bg.jpg") @:noCompletion #if display private #end class __ASSET__assets_images_dump_placeholder_bg_jpg extends lime.graphics.Image {}
+@:keep @:image("assets/images/dump/placeholder_fg.png") @:noCompletion #if display private #end class __ASSET__assets_images_dump_placeholder_fg_png extends lime.graphics.Image {}
+@:keep @:image("assets/images/dump/placeholder_Raya_Fixed.png") @:noCompletion #if display private #end class __ASSET__assets_images_dump_placeholder_raya_fixed_png extends lime.graphics.Image {}
+@:keep @:image("assets/images/dump/sprites.png") @:noCompletion #if display private #end class __ASSET__assets_images_dump_sprites_png extends lime.graphics.Image {}
+@:keep @:file("assets/images/dump/sprites.xml") @:noCompletion #if display private #end class __ASSET__assets_images_dump_sprites_xml extends haxe.io.Bytes {}
+@:keep @:image("assets/images/Engkanto_Icon.png") @:noCompletion #if display private #end class __ASSET__assets_images_engkanto_icon_png extends lime.graphics.Image {}
+@:keep @:file("assets/images/Engkanto_Icon.svg") @:noCompletion #if display private #end class __ASSET__assets_images_engkanto_icon_svg extends haxe.io.Bytes {}
+@:keep @:image("assets/images/entity/Raya.png") @:noCompletion #if display private #end class __ASSET__assets_images_entity_raya_png extends lime.graphics.Image {}
+@:keep @:file("assets/images/entity/Raya.xml") @:noCompletion #if display private #end class __ASSET__assets_images_entity_raya_xml extends haxe.io.Bytes {}
+@:keep @:image("assets/images/menuState/Background.png") @:noCompletion #if display private #end class __ASSET__assets_images_menustate_background_png extends lime.graphics.Image {}
+@:keep @:file("assets/images/menuState/Background.xml") @:noCompletion #if display private #end class __ASSET__assets_images_menustate_background_xml extends haxe.io.Bytes {}
+@:keep @:image("assets/images/menuState/Credits_Btn.png") @:noCompletion #if display private #end class __ASSET__assets_images_menustate_credits_btn_png extends lime.graphics.Image {}
+@:keep @:file("assets/images/menuState/Credits_Btn.xml") @:noCompletion #if display private #end class __ASSET__assets_images_menustate_credits_btn_xml extends haxe.io.Bytes {}
+@:keep @:image("assets/images/menuState/Logo.png") @:noCompletion #if display private #end class __ASSET__assets_images_menustate_logo_png extends lime.graphics.Image {}
+@:keep @:file("assets/images/menuState/Logo.xml") @:noCompletion #if display private #end class __ASSET__assets_images_menustate_logo_xml extends haxe.io.Bytes {}
+@:keep @:image("assets/images/menuState/NewGame_Btn.png") @:noCompletion #if display private #end class __ASSET__assets_images_menustate_newgame_btn_png extends lime.graphics.Image {}
+@:keep @:file("assets/images/menuState/NewGame_Btn.xml") @:noCompletion #if display private #end class __ASSET__assets_images_menustate_newgame_btn_xml extends haxe.io.Bytes {}
+@:keep @:image("assets/images/menuState/SaveState.png") @:noCompletion #if display private #end class __ASSET__assets_images_menustate_savestate_png extends lime.graphics.Image {}
+@:keep @:file("assets/images/menuState/SaveState.xml") @:noCompletion #if display private #end class __ASSET__assets_images_menustate_savestate_xml extends haxe.io.Bytes {}
+@:keep @:image("assets/images/menuState/Settings_Btn.png") @:noCompletion #if display private #end class __ASSET__assets_images_menustate_settings_btn_png extends lime.graphics.Image {}
+@:keep @:file("assets/images/menuState/Settings_Btn.xml") @:noCompletion #if display private #end class __ASSET__assets_images_menustate_settings_btn_xml extends haxe.io.Bytes {}
+@:keep @:image("assets/images/menuState/Wood_Wall.png") @:noCompletion #if display private #end class __ASSET__assets_images_menustate_wood_wall_png extends lime.graphics.Image {}
+@:keep @:file("assets/images/menuState/Wood_Wall.xml") @:noCompletion #if display private #end class __ASSET__assets_images_menustate_wood_wall_xml extends haxe.io.Bytes {}
 @:keep @:file("assets/music/music-goes-here.txt") @:noCompletion #if display private #end class __ASSET__assets_music_music_goes_here_txt extends haxe.io.Bytes {}
 @:keep @:file("assets/sounds/sounds-go-here.txt") @:noCompletion #if display private #end class __ASSET__assets_sounds_sounds_go_here_txt extends haxe.io.Bytes {}
 @:keep @:file("C:/haxeflixel/flixel/6,1,2/assets/sounds/beep.mp3") @:noCompletion #if display private #end class __ASSET__flixel_sounds_beep_mp3 extends haxe.io.Bytes {}

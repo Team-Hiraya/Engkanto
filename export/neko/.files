@@ -11,6 +11,10 @@ export/neko/bin/assets/images/dump/placeholder_fg.png
 export/neko/bin/assets/images/dump/placeholder_Raya_Fixed.png
 export/neko/bin/assets/images/dump/sprites.png
 export/neko/bin/assets/images/dump/sprites.xml
+export/neko/bin/assets/images/Engkanto_Icon.png
+export/neko/bin/assets/images/Engkanto_Icon.svg
+export/neko/bin/assets/images/entity/Raya.png
+export/neko/bin/assets/images/entity/Raya.xml
 export/neko/bin/assets/images/menuState/Background.png
 export/neko/bin/assets/images/menuState/Background.xml
 export/neko/bin/assets/images/menuState/Credits_Btn.png
