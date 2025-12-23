@@ -1,6 +1,5 @@
 package state;
 
-import entity.MobileControls;
 import entity.Player;
 import flixel.FlxG;
 import flixel.FlxSprite;
