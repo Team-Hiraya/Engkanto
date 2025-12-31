@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="sprites.png">
+	<!--
+	Created with ShoeBox
+	http://renderhjs.net/shoebox/
+	-->
+	<SubTexture name="A1 instance 10000" x="0" y="0" width="797" height="300"/>
+	<SubTexture name="A2 instance 10000" x="0" y="300" width="797" height="300"/>
+	<SubTexture name="A3 instance 10000" x="0" y="600" width="796" height="299"/>
+	<SubTexture name="A4 instance 10000" x="0" y="899" width="796" height="299"/>
+	<SubTexture name="A5 instance 10000" x="0" y="1198" width="797" height="299"/>
+</TextureAtlas>

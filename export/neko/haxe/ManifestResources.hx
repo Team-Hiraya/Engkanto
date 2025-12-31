@@ -92,6 +92,7 @@ import sys.FileSystem;
 #if flash
 
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_data_goes_here_txt extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_temp_xml extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_template_xml extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_dump_despair_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_dump_despair_xml extends null { }
@@ -123,6 +124,28 @@ import sys.FileSystem;
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_settings_btn_xml extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_wood_wall_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_menustate_wood_wall_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_practice_background_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_practice_back_bush_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_practice_back_tree_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_practice_front_bush_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_practice_front_ground_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_practice_scene_test_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_practice_scene_test_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_practice_test_clip extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_practice_tree_front_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_scene_a_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_scene_a_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_scene_one_asset_back_bushes_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_scene_one_asset_bushes_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_scene_one_asset_ground_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_scene_one_asset_ground_a2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_scene_one_asset_tree_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_scene_one_prototype_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_scene_one_prototype_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_sprites_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_sprites_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_test_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_test_xml extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_music_music_goes_here_txt extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_sounds_sounds_go_here_txt extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__flixel_sounds_beep_ogg extends null { }
